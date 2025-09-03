@@ -1,0 +1,9 @@
+.div-btn > button{
+    width: 50%;
+    text-align: center;
+}
+
+.title{
+	font-size: 110%;
+	font-weight: bold;
+}
