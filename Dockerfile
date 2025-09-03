@@ -34,6 +34,8 @@ RUN php artisan config:cache \
 # Expor a porta usada pelo Laravel
 EXPOSE 8000
 
+RUN ln -sf /dev/stderr /var/www/html/storage/logs/laravel.log
+
 RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
 
 # Comando para iniciar o servidor
